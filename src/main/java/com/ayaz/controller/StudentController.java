@@ -41,7 +41,7 @@ public class StudentController {
         return ResponseEntity.created(path).build();
     }
 
-    @DeleteMapping("/studen/{id}")
+    @DeleteMapping("/student/{id}")
     public String deleteStudent(@PathVariable String id){
         studentService.deleteStudentById(Integer.parseInt(id));
         return "User with Id " + id + " deleted";
